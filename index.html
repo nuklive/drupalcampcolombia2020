@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Drupal</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h2>Drupal desacoplado: el caso de TuDiscovery.com</h2>
+                </div>
+                <div class="column">
+                    <p>
+                        <img src="images/DrupalCamp.png" alt="" height="200px">
+                        <a href="mailto:alejandro.cordova@hey.com">Alejandro Córdova Liendo</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="foooter">
+                    <p>
+                        <small>Reveal.js Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a
+                                href="http://twitter.com/hakimel">@hakimel</a></small>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h3 class="starwars">
+                Hace mucho tiempo, en una galaxia muy lejana...
+            </h3>
+        </section>
+        <section class="starwars">
+            <div>
+
+                <div class="title">
+                    <p>Episode IV</p>
+                    <h1>A New Hope</h1>
+                </div>
+
+                <p>Discovery Networks necesitaba rehacer los sitios de Latam y Brasil del Discovery Channel</p>
+                <p>Decidimos hacerlo utilizando Drupal en modo headless</p>
+
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>¿Qué?</h3>
+                    <p>
+                        Drupal
+                    </p>
+                    <img src="images/cmsweb.png" alt="">
+                    <p>
+                        Drupal headless
+                    </p>
+                    <img src="images/headless.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>¿Cómo?</h3>
+                    <ul>
+                        <li>
+                            JSON API
+                        </li>
+                        <li>
+                            GraphQL
+                        </li>
+                        <li>
+                            Custom endpoints
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>¿Por qué?</h3>
+                    <ul>
+                        <li>
+                            <span class="strike">Locura temporal</span>
+                        </li>
+                        <li>
+                            Los costos ocultos de desacoplar
+                            <ul>
+                                <li>
+                                    Dejar de lado funcionalidades de Drupal (Layout Builder, In place editing, ...)
+                                </li>
+                                <li>
+                                    Escalabilidad
+                                </li>
+                                <li>
+                                    Costos
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Las ventajas de desacoplar
+                            <ul>
+                                <li>
+                                    Múltiples equipos para frontend
+                                </li>
+                                <li>
+                                    Desarrollo más rápido
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>
+                        Desafíos
+                    </h3>
+                    <ul>
+                        <li>
+                            Sitio con mucho contenido
+                        </li>
+                        <li>
+                            Integración con proveedores externos
+                        </li>
+                        <li>
+                            Multilenguaje
+                        </li>
+                        <li>
+                            Contenido restringido por ubicación
+                        </li>
+                        <li>
+                            Equipo distribuído
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="images/squiggles.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>
+                        Para su consideración
+                    </h3>
+                    <ul>
+                        <li>
+                            Experiencia de los editores
+                        </li>
+                        <li>
+                            Routing
+                        </li>
+                        <li>
+                            Caching
+                        </li>
+                        <li>
+                            Performance
+                        </li>
+                        <li>
+                            Geolocation
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="images/squiggles-2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <h3>
+                        Logros
+                    </h3>
+                    <ul>
+                        <li>
+                            Transmisiones en vivo
+                        </li>
+                        <li>
+                            Site uptime
+                        </li>
+                        <li>
+                            Migraciones
+                        </li>
+                        <li>
+                            Apps
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="images/squiggles-3.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <h2>Fin</h2>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+    Reveal.on('slidechanged', event => {
+        if (event.indexh == 2) {
+            slide = event.currentSlide;
+            slide.childNodes[1].className += " crawl";
+        }
+    });
+</script>
+</body>
+</html>
